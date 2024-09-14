@@ -5,45 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Display-flex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Agência X Carros</title>
 </head>
 
 <body>
     <!-- Header -->
     <header>
+
         <h1>Agência X Carros</h1>
         <div class="header-menu">
             <select name="" id="">
-                <option>Catálogo</option>
+                <option value="" disabled selected>Catálogo</option>
                 <option>Carros Usados</option>
                 <option>Carros Novos</option>
                 <option>Promoções</option>
             </select>
 
             <select name="" id="">
-                <option>Marcas</option>
+                <option value="" disabled selected>Marcas</option>
                 <option>Ford</option>
                 <option>Chevrolet</option>
                 <option>Honda</option>
             </select>
 
             <select name="" id="">
-                <option>Contato</option>
+                <option value="" disabled selected>Contato</option>
                 <option>Fale conosco</option>
                 <option>Localização</option>
             </select>
         </div>
     </header>
 
-    <!-- Banner -->
+    <!-- Carrossel com css para Banner -->
     <div class="banner">
         Encontre o carro dos seus sonhos!
+        <div class="slides">
+            <img src="img/bmw.jpg" alt="banner">
+            <img src="img/ferrari.webp" alt="banner">
+            <img src="img/posche.jpg" alt="banner">
+        </div>
     </div>
 
     <!-- Catalógo de carros -->
     <section class="catalog">
         <div class="catalog-card">
-            <img src="https://via.placeholder.com/300x200" alt="Carro1">
+            <img src="img/mustang.jpg" alt="Carro1">
             <h3>Carro Mustang</h3>
             <p>Descrição do carro: Excelente para fãs!</p>
             <button>Saiba mais</button>
@@ -60,33 +69,54 @@
             <p>Descrição do carro: Excelente para aventureiros!</p>
             <button>Saiba mais</button>
         </div>
+        <div class="catalog-card">
+            <img src="img/mclaren.jpg" alt="Carro1">
+            <h3>Carro Mclaren</h3>
+            <p>Descrição do carro: Excelente para fãs!</p>
+            <button>Saiba mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="img/posche.jpg" alt="Carro1">
+            <h3>Carro Posche</h3>
+            <p>Descrição do carro: Excelente para fãs!</p>
+            <button>Saiba mais</button>
+        </div>
+        <div class="catalog-card">
+            <img src="img/ferrari.webp" alt="Carro1">
+            <h3>Carro Tesla</h3>
+            <p>Descrição do carro: Excelente para aventureiros!</p>
+            <button>Saiba mais</button>
+        </div>
     </section>
 
     <!-- Formulario de contato -->
-     <section class="contact-form">
-        <h2>Fale conosco</h2>
-        <form action="">
-            <label for="name">Nome:</label>
-            <input type="text" id="nome" placeholder="Digite seu nome">
+    <section class="form-container">
+        <div class="contact-form">
+            <h2>Fale conosco:</h2>
+            <form action="">
+                <label for="name"><i class="fas fa-user"></i> Nome:</label>
+                <input type="text" id="nome" placeholder="Digite seu nome">
 
-            <label for="email">Email:</label>
-            <input type="text" id="email" placeholder="Digite seu email">
+                <label for="email"><i class="fas fa-envelope"></i>  Email:</label>
+                <input type="email" id="email" placeholder="Digite seu email">
 
-            <label for="email">Mensagem:</label>
-            <textarea rows="5"  id="message" placeholder="Como posso ajudar?"></textarea>
+                <label for="message"><i class="fas fa-message"></i> Mensagem:</label>
+                <textarea rows="5" id="message" placeholder="Como posso ajudar?"></textarea>
 
-            <button type="submit">Enviar</button>
-        </form>
+                <button type="submit">Enviar</button>
+            </form>
 
-     </section>
+        </div>
+    </section>
 
-     <!-- Footer -->
-      <footer>
+    <!-- Footer -->
+    <footer>
         <ul>
             <li><a href="#politicas">Políticas e Privacidade</a></li>
             <li><a href="#termos">Termos e Serviços</a></li>
+            <li align="center" style=""><a href="#ano">	&copy; - 2024</a></li>
         </ul>
-      </footer>
+    </footer>
 </body>
 
 </html>
